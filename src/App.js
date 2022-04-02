@@ -11,12 +11,14 @@ import Project from "./pages/project/Project";
 
 //components
 import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 // import AreaRange from "./components/AreaRange";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Sidebar></Sidebar>
         <div className="container">
           <Navbar />
 
