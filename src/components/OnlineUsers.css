@@ -5,6 +5,9 @@
   box-sizing: border-box;
   background-color: #fbfbfb;
   color: var(--heading-color);
+  height: 100vh;
+  position: fixed;
+  right: 0;
 }
 
 .user-list h2 {
