@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useDocument } from "../../hooks/useDocument";
+import ProjectSummary from "./ProjectSummary";
 import "./Project.css";
 export default function Project() {
   const { id } = useParams();
@@ -12,5 +13,9 @@ export default function Project() {
     return <div className="loading project-margin">loading....</div>;
   }
 
-  return <div className="project-details project-margin">{document.name}</div>;
+  return (
+    <div className="project-details project-margin">
+      <ProjectSummary project={document} />
+    </div>
+  );
 }
