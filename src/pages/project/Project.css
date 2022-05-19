@@ -91,6 +91,6 @@
 }
 
 .comment-content {
-  color: var(--text-color);
+  color: #666;
   font-size: 0.9em;
 }

@@ -1,6 +1,6 @@
 .sidebar {
-  width: 300px;
-  min-width: 300px;
+  width: 200px;
+  min-width: 200px;
   background: var(--primary-color);
   min-height: 100vh;
   position: fixed;
