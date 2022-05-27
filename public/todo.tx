@@ -1,0 +1,9 @@
+pagination :for projects, comments
+building a blog inside this app
+replies for the comments
+fully responsive app
+dark mode
+allow project creator to add tasks for a single project for any of project's assigened users
+every task's ssigned user can tell he ended it 
+only project creator could end this task if he accept the solution from the task's user
+tasks appear to the project's assigned users

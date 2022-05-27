@@ -1,6 +1,6 @@
 .project-margin {
-  margin-left: 330px;
-  margin-right: 290px;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 
 .project-details {
@@ -39,7 +39,9 @@
 }
 
 .project-summary .assigned-users .avatar {
-  margin-right: 10px;
+  margin-left: -10px;
+
+  border: 1px solid #999;
 }
 
 .project-summary + .btn {
@@ -63,13 +65,32 @@
   /* border: 2px solid #999;
   border-radius: 10px; */
 }
+
+.project-comments ul::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.project-comments ul::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.project-comments ul::-webkit-scrollbar-thumb {
+  background-color: rgb(209, 207, 207);
+  height: 20px;
+  border-radius: 6px;
+}
 .project-comments li {
   padding: 16px;
   border-radius: 4px;
   border: 1px solid #f2f2f2;
-  margin-top: 20px;
+  margin-top: 10px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
   background-color: #fff;
+}
+
+.project-comments li:first-child {
+  margin-top: 0;
 }
 
 .comment-author {
@@ -93,4 +114,18 @@
 .comment-content {
   color: #666;
   font-size: 0.9em;
+}
+
+@media (max-width: 1200px) {
+  .project-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-summary {
+    width: 90%;
+  }
+  .project-comments {
+    width: 90%;
+  }
 }

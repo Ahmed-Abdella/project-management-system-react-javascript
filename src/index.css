@@ -9,11 +9,15 @@
   --bg-color: #f4f4f4;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 /* base styles */
 body {
   font-family: Poppins, sans-serif;
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1.3rem;
   background: var(--bg-color);
 }
 ul,
@@ -62,7 +66,7 @@ label span {
 input,
 textarea {
   padding: 8px 6px;
-  font-size: 1em;
+  font-size: 1.3em;
   color: #777;
   width: 100%;
   box-sizing: border-box;
@@ -79,4 +83,19 @@ textarea {
   border-radius: 4px;
   padding: 8px;
   margin: 10px 0;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    font-size: 1.55em;
+  }
+
+  .project-details {
+    display: flex;
+    flex-direction: column;
+  }
 }

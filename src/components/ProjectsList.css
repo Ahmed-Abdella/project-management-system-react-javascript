@@ -1,5 +1,6 @@
 .project-list {
   margin-top: 40px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 20px;
@@ -11,6 +12,7 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
   text-decoration: none;
   color: inherit;
+  /* max-width: 40rem; */
 }
 .project-list h4 {
   font-size: 0.9em;
@@ -24,6 +26,7 @@
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px solid #eee;
+  margin-left: 20px;
 }
 .project-list ul {
   margin: 10px 0;
@@ -35,4 +38,6 @@
 .project-list .avatar {
   width: 30px;
   height: 30px;
+  margin-left: -15px;
+  border: 0.5px solid #999;
 }

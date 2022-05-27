@@ -7,7 +7,7 @@
 
 .navbar ul {
   display: flex;
-  margin: 0 280px 0 auto;
+  margin: 0 20rem 0 -10rem;
   align-items: center;
   justify-content: flex-end;
 }
@@ -39,4 +39,10 @@
   color: #333;
   text-decoration: none;
   margin-right: 20px;
+}
+
+@media (max-width: 900px) {
+  .navbar ul {
+    margin: 0 20rem 0 -20rem;
+  }
 }

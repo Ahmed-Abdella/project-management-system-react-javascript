@@ -21,15 +21,19 @@ export default function Sidebar() {
           <ul>
             <li>
               <NavLink to="/">
-                <img src={DashboardIcon} alt="dashboard icon"></img>
-                <span>Dashboard</span>
+                <div className="link">
+                  <img src={DashboardIcon} alt="dashboard icon"></img>
+                  <span>Dashboard</span>
+                </div>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/create">
-                <img src={AddIcon} alt="dashboard icon"></img>
-                <span>Add project</span>
-              </NavLink>
+              <div className="link">
+                <NavLink to="/create">
+                  <img src={AddIcon} alt="dashboard icon"></img>
+                  <span>Add project</span>
+                </NavLink>
+              </div>
             </li>
           </ul>
         </nav>
