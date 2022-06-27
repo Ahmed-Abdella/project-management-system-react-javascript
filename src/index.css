@@ -17,7 +17,7 @@ html {
 body {
   font-family: Poppins, sans-serif;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   background: var(--bg-color);
 }
 ul,
@@ -87,7 +87,7 @@ textarea {
 
 @media (max-width: 900px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
 
   body {
@@ -97,5 +97,36 @@ textarea {
   .project-details {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.pages-margin {
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+@media (max-width: 900px) {
+  .pages-margin {
+    margin-left: 11rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .pages-margin {
+    margin-right: 10rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .pages-margin {
+    margin-right: 8rem;
+    margin-left: 8rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .pages-margin {
+    margin-right: 0.5rem;
+    margin-left: 8rem;
   }
 }

@@ -18,15 +18,15 @@ export default function Navbar() {
           </Link>
         </li>
         {!user && (
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-        )}
+          <div className="auth-div">
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
 
-        {!user && (
-          <li>
-            <Link to="/signup">Signup</Link>
-          </li>
+            <li>
+              <Link to="/signup">Signup</Link>
+            </li>
+          </div>
         )}
 
         {user && (

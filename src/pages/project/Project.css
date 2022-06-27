@@ -1,7 +1,7 @@
-.project-margin {
+/* .project-margin {
   margin-left: 20rem;
   margin-right: 20rem;
-}
+} */
 
 .project-details {
   display: grid;
@@ -46,6 +46,10 @@
 
 .project-summary + .btn {
   margin-top: 20px;
+}
+
+.project-comments {
+  padding-bottom: 2rem;
 }
 
 .project-comments label {
@@ -128,4 +132,95 @@
   .project-comments {
     width: 90%;
   }
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.tasks .task {
+  display: flex;
+  padding: 2px 0.8rem 2px 0.8rem;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ffffff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+  min-width: 95%;
+  max-width: 95%;
+  min-height: 50px;
+}
+
+.tasks .task .task-content {
+  max-width: 30rem;
+  overflow-wrap: break-word;
+}
+
+.tasks h2 {
+  color: var(--heading-color);
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.tasks .task .task-man {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks .task .task-man p {
+  font-size: 1em;
+  color: var(--text-color);
+}
+
+.tasks .task .task-man .avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.tasks form {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+  border: 1px solid rgb(219, 218, 218);
+  border-radius: 5px;
+}
+
+.tasks form button {
+  margin-top: 2rem;
+}
+
+.tasks form input {
+  width: 43rem;
+}
+
+.done-icon {
+  width: 30px;
+  height: 30px;
+  display: inline;
+
+  margin-left: 10px;
+}
+
+.done-icon:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem rgb(68, 209, 162));
+}
+
+.task-done {
+  filter: none;
+  background-color: rgb(68, 209, 162);
+  border-radius: 50%;
+  padding: 2px;
 }

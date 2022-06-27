@@ -1,4 +1,5 @@
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 import "./App.css";
 
@@ -8,6 +9,8 @@ import Create from "./pages/create/Create";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import Project from "./pages/project/Project";
+
+// modal
 
 // auth
 import { useAuthContext } from "./hooks/useAuthContext";
@@ -20,6 +23,12 @@ import OnlineUsers from "./components/OnlineUsers";
 
 function App() {
   const { user, authIsReady } = useAuthContext();
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 620;
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
   return (
     <div className="App">
       {authIsReady && (
@@ -52,7 +61,7 @@ function App() {
               />
             </Routes>
           </div>
-          {user && <OnlineUsers />}
+          {user && width > breakpoint && <OnlineUsers />}
         </BrowserRouter>
       )}
     </div>

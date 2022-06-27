@@ -58,3 +58,47 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .avatar {
+    height: 40px;
+    width: 40px;
+  }
+
+  .sidebar .links {
+    margin-top: 25px;
+  }
+
+  .sidebar .links a {
+    display: block;
+    padding: auto;
+    margin: auto;
+    width: 75%;
+  }
+
+  /* .sidebar .links img {
+    border-radius: 50%;
+  } */
+}
+.users-icon {
+  height: 30px;
+  width: 30px;
+  color: #444;
+  padding: 0.9rem 2rem;
+  margin-left: 1rem;
+  transition: all 0.2s ease-out;
+}
+
+.users-icon:hover {
+  cursor: pointer;
+  background-color: #c9e1fd;
+  border-radius: 10px;
+}

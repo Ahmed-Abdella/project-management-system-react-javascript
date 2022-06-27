@@ -1,9 +1,21 @@
 pagination :for projects, comments
 building a blog inside this app
 replies for the comments
-fully responsive app
+fully responsive app__
+showing users icon in the sidebar in mobile version which show pop up modal in click contians the users ((using react protal))
+
 dark mode
 allow project creator to add tasks for a single project for any of project's assigened users
 every task's ssigned user can tell he ended it 
 only project creator could end this task if he accept the solution from the task's user
 tasks appear to the project's assigned users
+building modal for every task when click on it
+
+
+
+////////////////////advanced///////////////
+add friends system
+showing friends not all users
+notification system
+chat system
+

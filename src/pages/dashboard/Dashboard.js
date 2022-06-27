@@ -21,7 +21,7 @@ export default function Dashboard() {
           case "mine":
             let assignedToMe = false;
             document.assignedUsersList.forEach((u) => {
-              if (user.uid === u.id) {
+              if (user.uid === u.id || user.uid === document.createdBy.id) {
                 assignedToMe = true;
               }
             });
@@ -39,7 +39,7 @@ export default function Dashboard() {
       })
     : null;
   return (
-    <div className="dashboard">
+    <div className="dashboard pages-margin">
       {error && <p className="error">{error}</p>}
       {documents && (
         <ProjectsFilter

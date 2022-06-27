@@ -1,0 +1,81 @@
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 50px 50px 50px 50px;
+
+  z-index: 1000;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.users-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal-container::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.modal-container::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.modal-container::-webkit-scrollbar-thumb {
+  background-color: rgb(209, 207, 207);
+  height: 20px;
+  border-radius: 6px;
+}
+
+.users-modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(212, 212, 212, 0.63);
+}
+
+.users-modal .user-in-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.users-modal h2 {
+  margin-bottom: 20px;
+}
+
+.users-modal-overlay button {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: block;
+  background-color: var(--primary-color);
+  padding: 5px;
+  margin-bottom: -40px;
+  margin-left: -40px;
+  margin-top: auto;
+
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 2em;
+  border: none;
+  transition: all 0.2s ease-out;
+  border: 2px solid var(--primary-color);
+}
+
+.users-modal-overlay button:hover {
+  color: #444;
+  background-color: #ffffff;
+}

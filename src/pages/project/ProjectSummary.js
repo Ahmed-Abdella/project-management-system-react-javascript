@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Avatar from "../../components/Avatar";
+import ProjectTasks from "./ProjectTasks";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { useFirestore } from "../../hooks/useFirestore";
 
@@ -34,6 +35,8 @@ export default function ProjectSummary({ project }) {
           mark as complete
         </button>
       )}
+
+      <ProjectTasks project={project} />
     </div>
   );
 }

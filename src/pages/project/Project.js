@@ -3,6 +3,7 @@ import { useDocument } from "../../hooks/useDocument";
 import ProjectSummary from "./ProjectSummary";
 import "./Project.css";
 import ProjectComments from "./ProjectComments";
+
 export default function Project() {
   const { id } = useParams();
   const { document, error } = useDocument("projects", id);
@@ -15,7 +16,7 @@ export default function Project() {
   }
 
   return (
-    <div className="project-details project-margin">
+    <div className="project-details pages-margin">
       <ProjectSummary project={document} />
       <ProjectComments project={document} />
     </div>

@@ -74,6 +74,7 @@ export default function Create() {
       comments: [],
       createdBy,
       assignedUsersList,
+      tasks: [],
     };
 
     await addDocument(project);
@@ -83,7 +84,7 @@ export default function Create() {
   };
 
   return (
-    <div className="create-form">
+    <div className="create-form pages-margin">
       <h2 className="page-title">Create new project</h2>
       <form onSubmit={handleSubmit}>
         <label>
