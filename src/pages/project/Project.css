@@ -224,3 +224,9 @@
   border-radius: 50%;
   padding: 2px;
 }
+
+@media (max-width: 620px) {
+  .tasks form input {
+    width: 240px;
+  }
+}

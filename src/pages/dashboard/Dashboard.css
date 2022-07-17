@@ -38,3 +38,64 @@
 .project-filter button.active {
   color: var(--primary-color);
 }
+
+/* @media (max-width: 620px) {
+  .project-filter {
+    max-width: 40rem;
+  }
+
+  .project-filter nav {
+    background-color: red;
+  }
+} */
+
+.drop-down-container {
+  display: flex;
+
+  align-items: center;
+}
+
+.drop-down-container p {
+  margin-right: 10px;
+}
+
+.drop-down-container p span {
+  color: var(--primary-color);
+}
+
+.drop-down-container img {
+  cursor: pointer;
+}
+
+.menu-container {
+  position: relative;
+}
+.menu-container nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: max-content;
+  padding: 10px;
+  transition: all 1s ease-in-out;
+  border-radius: 5px;
+  position: absolute;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.121);
+}
+
+.menu-container button {
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  font-weight: 500;
+  color: #444;
+  cursor: pointer;
+
+  font-size: 0.9em;
+  transition: color 0.2s ease-out;
+  z-index: 10;
+  margin-top: 5px;
+}
+
+.menu-container button:hover {
+  color: #888;
+}
