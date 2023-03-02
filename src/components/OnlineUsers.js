@@ -9,7 +9,7 @@ export default function OnlineUsers() {
   const { error, documents } = useCollection("users");
   const { user } = useAuthContext();
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 720;
+  const breakpoint = 800;
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
