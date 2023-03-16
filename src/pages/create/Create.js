@@ -83,6 +83,8 @@ export default function Create() {
     }
   };
 
+  console.log(response);
+
   return (
     <div className="create-form pages-margin">
       <h2 className="page-title">Create new project</h2>

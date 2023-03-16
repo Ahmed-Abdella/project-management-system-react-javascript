@@ -20,7 +20,6 @@ export default function ProjectsFilter({ currentFilter, changeFilter }) {
   }, []);
 
   const breakpoint = 700;
-  console.log(dropOpen);
 
   const handleFilter = (newFilter) => {
     changeFilter(newFilter);
